@@ -219,13 +219,23 @@ a{
   margin-bottom: 24px;
 }
 
+.card.conquistas {
+  background: 
+  linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+  url(assets/img/Momentos-Importantes/floresta.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 h2{
   margin:0 0 10px 0;
   font-size:1.1rem;
   color:var(--text);
 }
 
-.muted{color:var(--muted)}
+.muted{
+  color:var(--muted);
+}
 
 /* ====== TIMELINE ====== */
 .timeline{
@@ -233,6 +243,9 @@ h2{
   padding-left:22px;
   border-left: 3px solid rgba(190,140,70,0.5);
   margin-top: 20px;
+  background: 
+  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+  url(assets/img/Momentos-Importantes/once.jpg);
 }
 
 .timeline::before{
@@ -436,12 +449,22 @@ audio::-webkit-media-controls-enclosure {
   justify-content:space-between;
   min-height:400px;
   border:1px solid rgba(255,255,255,0.08);
-  transition:transform 0.1s, box-shadow .2s;
+  /* transition:transform 0.1s, box-shadow .2s; */
 }
 .plano-card:hover{
   transform:translateY(-6px);
   box-shadow:0 0 12px 6px rgba(255,122,122,0.18);
   cursor: pointer;
+}
+
+#versoes .versao1:hover h3, #versoes .versao1:hover p, #versoes .versao1:hover a, #versoes .versao1:hover li,
+#versoes .versao2:hover h3, #versoes .versao2:hover p, #versoes .versao2:hover a, #versoes .versao2:hover li,
+#versoes .versao3:hover h3, #versoes .versao3:hover p, #versoes .versao3:hover a, #versoes .versao3:hover li {
+  opacity: 1;
+}
+
+#versoes .versao1:hover, #versoes .versao2:hover, #versoes .versao3:hover {
+  background: none !important;
 }
 
 .plano-card h3{ margin:0 0 8px }
@@ -459,6 +482,28 @@ audio::-webkit-media-controls-enclosure {
   display:flex;
   flex-direction:column;
   gap:8px;
+}
+
+.versao1 {
+  background-image: url(assets/img/Momentos-Importantes/Alice1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.versao2 {
+  background-image: url(assets/img/Momentos-Importantes/Alice2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.versao3 {
+  background-image: url(assets/img/Momentos-Importantes/Alice3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#versoes h3, #versoes p, #versoes li, #versoes a {
+  opacity: 0;
 }
 
 .btn-plano{
@@ -549,7 +594,7 @@ footer{
 }
 
 .achievements.cidades h3 {
-  font-size: 16px;
+  font-size: 14px;
   margin: 5px 0;
 }
 
@@ -587,7 +632,7 @@ footer{
 
 .achievement-card {
   background: rgba(51, 15, 15, 0.75);
-  padding: 15px;
+  padding: 8px;
   border-radius: 18px;
   box-shadow: 0 8px 28px rgba(0,0,0,0.18);
   transition: 0.3s ease;
@@ -622,12 +667,12 @@ footer{
 }
 @media (max-width: 700px) {
   .hero {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .hero-photo img {
-      width: 130px;
-      height: 130px;
+    width: 130px;
+    height: 130px;
   }
 }
