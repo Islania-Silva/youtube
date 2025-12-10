@@ -1,4 +1,3 @@
-/* ====== DARK THEME GLOBAL (versão mais clara) ====== */
 :root{
   --bg:#1a1b1e;            /* fundo geral mais claro */
   --panel:#222327;         /* cards mais claros */
@@ -73,7 +72,7 @@ a{
   text-decoration:none;
 }
 
-/* ====== HERO ====== */
+/* HERO */
 .hero{
   background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
   border-radius:var(--card-radius);
@@ -142,7 +141,7 @@ a{
   box-shadow: 0 0 5px 3px rgb(94, 85, 85);
 }
 
-/* ====== LAYOUT ====== */
+/* LAYOUT */
 .two-col{
   display:grid;
   grid-template-columns:1fr 320px;
@@ -172,7 +171,7 @@ h2{
   color:var(--muted);
 }
 
-/* ====== TIMELINE ====== */
+/* TIMELINE */
 .timeline{
   position:relative;
   padding-left:22px;
@@ -275,7 +274,7 @@ h2{
   font-size:0.95rem;
 }
 
-/* ====== MENSAGENS ====== */
+/* MENSAGENS */
 .nicho, .colaborador {
   margin-top:14px;
 }
@@ -305,7 +304,7 @@ h2{
   border:1px solid rgba(255,255,255,0.07);
 }
 
-/* ====== SIDEBAR ====== */
+/* SIDEBAR */
 .side-block{margin-bottom:12px}
 
 .playlist .msg, .amamos .msg{
@@ -343,7 +342,7 @@ audio::-webkit-media-controls-enclosure {
   border-radius: 20px !important;
 }
 
-/* ====== PLANOS ====== */
+/* PLANOS */
 .planos-container{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -399,18 +398,12 @@ audio::-webkit-media-controls-enclosure {
 }
 .btn-plano.small{padding:8px 10px; font-size:0.95rem}
 
-/* ====== FOOTER ====== */
+/* FOOTER */
 footer{
   margin-top:26px;
   text-align:center;
   color:var(--muted);
   font-size:0.9rem;
-}
-
-@media print{
-  .nav-links, .btn-plano { display:none; }
-
-  body { background:white; color:black; }
 }
 /* CONQUISTAS  */
 
