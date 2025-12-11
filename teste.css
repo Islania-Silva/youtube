@@ -34,6 +34,22 @@ html,body{ height:100%; }
   opacity: 1;
 }
 
+#themeToggleBtnsegundo {
+  position: fixed;
+  top: 60px;
+  right: 15px;
+  padding: 10px 16px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 9999;
+  opacity: .85;
+  transition: .3s;
+}
+
 body{
   background: radial-gradient(circle at top, #1e0d0d, #000) fixed;
   background-attachment: fixed;
@@ -626,6 +642,48 @@ footer{
   line-height: 1.5;
   font-size: 0.95rem;
 }
+
+/* GALERIA OCULTA HORIZONTAL */
+
+.galeria-oculta {
+  /* height: 330px; */
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(assets/img/Momentos-Importantes/once-rainha.jpg);
+}
+
+.fotos-ocultas-horizontal {
+  display: none; /* começa oculta */
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 15px;
+  margin-top: 20px;
+
+  scrollbar-color: #a67c52 #1a0000; 
+  scrollbar-width: thin;
+}
+
+.fotos-ocultas-horizontal img {
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 2px solid rgba(180,135,70,0.4);
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  /* display: inline-block; */
+  margin-right: 12px;
+  transition: 0.3s;
+}
+
+.fotos-ocultas-horizontal img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255, 215, 140, 0.5);
+}
+
+.revelar-btn:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 700px) {
   .hero {
     flex-direction: column;
